@@ -83,22 +83,38 @@ section h3 {
   color: #444;
 }
 
+
 .participants-list {
-  list-style: disc;
-  margin: 8px 0 0 18px;
+  list-style: none;
+  margin: 8px 0 0 0;
   padding: 0;
 }
 
+
 .participants-list li {
-  margin-bottom: 0;        /* no extra space between items */
-  padding: 2px 0;          /* minimal vertical spacing */
-  background: transparent;  /* remove tag background */
-  border: none;             /* remove tag border */
-  border-radius: 0;         /* remove rounding */
-  display: list-item;       /* ensure normal bullet behavior */
+  margin-bottom: 0;
+  padding: 2px 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   color: #263238;
-  box-shadow: none;         /* remove subtle shadow */
-  line-height: 1.3;        /* keep items readable when compact */
+  box-shadow: none;
+  line-height: 1.3;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c62828;
+  font-size: 16px;
+  user-select: none;
+  margin-left: 4px;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #a31515;
 }
 
 /* remove divider and extra top padding between items */
